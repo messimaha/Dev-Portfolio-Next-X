@@ -1,8 +1,15 @@
 import { RiComputerLine } from "react-icons/ri";
 import { FaServer } from "react-icons/fa";
-import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
+import {
+  AiOutlineAntDesign,
+  AiOutlineApi,
+} from "react-icons/ai";
 import { MdDeveloperMode } from "react-icons/md";
-import { IProject, Service, Skill } from "./types";
+import {
+  IProject,
+  Service,
+  Skill,
+} from "./types";
 
 import { BsCircleFill } from "react-icons/bs";
 
@@ -17,30 +24,20 @@ export const services: Service[] = [
     Icon: FaServer,
     title: "Backend  Development",
     about:
-      "handle database, server, api using <b>Express </b> & other popular frameworks",
+      "handle database, server, api using <b>SPRING BOOT </b> & other popular frameworks",
   },
   {
     Icon: AiOutlineApi,
     title: "API Development",
     about:
-      "I can develop robust  REST API using <b>django-rest-api</b>  & <b>Node API</b> ",
+      "I can develop robust  REST API using <b>Spring boot api</b>  & <b>Node API</b> ",
   },
-  {
-    Icon: MdDeveloperMode,
-    title: "Competitive Coder",
-    about: "a daily problem solver in <b>HackerRank</b>  and <b>Leet Code</b> ",
-  },
+
   {
     Icon: AiOutlineAntDesign,
     title: "UI/UX designer",
     about:
-      "stunning user interface designer using <b>Figma</b>  and  <b>Framer</b> ",
-  },
-  {
-    Icon: RiComputerLine,
-    title: "Whatever",
-    about:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!",
+      "stunning user interface designer using <b>Figma</b> ",
   },
 ];
 
@@ -67,12 +64,22 @@ export const languages: Skill[] = [
   },
   {
     Icon: BsCircleFill,
-    name: "Django",
-    level: "80",
+    name: "Express",
+    level: "60",
   },
   {
     Icon: BsCircleFill,
-    name: "Bootstrap",
+    name: "Spring boot",
+    level: "60",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Laravel",
+    level: "60",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Tailwind",
     level: "80",
   },
 ];
@@ -93,111 +100,78 @@ export const tools: Skill[] = [
     name: "Illustrator",
     level: "60",
   },
-  {
-    Icon: BsCircleFill,
-    name: "Framer",
-    level: "45",
-  },
 ];
 
 export const projects: IProject[] = [
-  { 
-    name: "COVID Tracker",
+  {
+    name: "Wegrow",
     description:
-      "This app shows a statistical view about corona virus over the world",
-    image_path: "/images/covid.jpg",
-    deployed_url: "https://covid-19-tracker-by-sumit.web.app/",
-    github_url: "https://github.com/Dey-Sumit/covid-19-tracker",
-    category: ["react"],
-    key_techs: ["React", "Chart.js", "Material UI"],
+      "This is a website help people who like to fix things can help others. They offer different services like gardening, fixing things at home, moving, taking care of pets, cleaning, putting in new floors, helping with computers, and painting. People who know how to do these things can show what they can do. People who need these services can find someone to help them based on what they need or where they are",
+    image_path: "/assets/wegrow.png",
+    deployed_url: null,
+    github_url:
+      "https://github.com/yassine121212/Wegrow",
+    category: ["react","mongo","Express","node"],
+    key_techs: [
+      "React",
+      "mongo",
+      "NodeJs",
+      "Express",
+    ],
   },
   {
-    name: "Algorithm Visualizer",
-    image_path: "/images/algoVisual.png",
-    deployed_url: "https://visual-algorithm.web.app/",
-    github_url: "https://github.com/Dey-Sumit/algorithm-visualizer",
-    category: ["react"],
+    name: "Allip",
+    image_path: "/assets/allip.png",
+    deployed_url: null,
+    github_url:
+      "https://github.com/messimaha/projet_automobile",
+    category: ["react","Firebase"],
     description:
-      "An web app which shows how an algorithm (path finding or sorting) works with cool animation",
-    key_techs: ["React", "firebase", "Framer Motion"],
+      "Designed and developed a versatile web application for managing internal operations and client interactions. Utilized React.js for front-end and Firebase for back-end.",
+    key_techs: ["React", "Firebase"],
   },
 
   {
-    name: "Dev Talks",
-    image_path: "/images/dev.jpg",
-    deployed_url: "https://dev-talks.herokuapp.com/",
-    github_url: "https://github.com/Dey-Sumit/Dev-talks",
+    name: "Car Prediction",
+    image_path: "/assets/carpre.png",
+    deployed_url: null,
+    github_url:
+      "https://github.com/aya-sahlouf/CarPricePredactor",
+    category: ["node", "react", "Firebase"],
+    description:
+      "It allows users to quickly obtain reliable estimates, thus simplifying their process of buying or selling vehicles. Our application represents a significant advance in the field of car price evaluation.",
+    key_techs: [
+      "React",
+      "Firebase",
+      "Flask",
+      "Tailwind",
+    ],
+  },
+
+  {
+    name: "Kanban App",
+    image_path: "/assets/Even.png",
+    deployed_url: null,
+    github_url:
+      "https://github.com/Dey-Sumit/chat-app-socket.io-react-node",
     category: ["node", "mongo", "react"],
     description:
-      "Social Media app for developers who can share project,create posts,etc...",
+      "Kanban project to handle tasks and projects between members",
     key_techs: [
       "React",
-      "Redux",
       "Node",
       "Express",
-      "Mongo",
-      "REST API",
-      "Bootstrap",
-    ],
-  },
-
-  {
-    name: "Realtime Chat App",
-    image_path: "/images/chatapp.jpg",
-    deployed_url: "https://sumit-chat.netlify.app/",
-    github_url: "https://github.com/Dey-Sumit/chat-app-socket.io-react-node",
-    category: ["node", "react"],
-    description:
-      "Basic Realtime Chat App where one can create a room can talk to each other",
-    key_techs: ["React", "Node", "Express", "Socket", "Bootstrap"],
-  },
-
-  {
-    name: "Tweeter Clone",
-    image_path: "/images/tweetme.jpg",
-    deployed_url: "http://sumaxtweetme.pythonanywhere.com/",
-    github_url: "https://github.com/Dey-Sumit/tweetme",
-    category: ["django", "react"],
-    description:
-      "First Django Project :) | Typical Social Media App where one can post,like ,comment etc",
-    key_techs: ["React", "Django", "Django REST API"],
-  },
-
-  {
-    name: "Color Classification using tf.js",
-    image_path: "/images/color.jpg",
-    deployed_url: "!#",
-    github_url: "https://github.com/Dey-Sumit/color-classification",
-    category: ["express"],
-    description:
-      "Tried ML with JS :) | this app classifies a color using CNN algorithm in browser",
-    key_techs: ["Express", "TensorFlow.js", "Vanilla js"],
-  },
-  {
-    name: "YouTube using YouTube ",
-    image_path: "/images/youtubeClone.png",
-    deployed_url: "https://not-utube.web.app/",
-    github_url: "https://github.com/Dey-Sumit/youtube-clone-tutorial-up",
-    category: ["express"],
-    description:
-      'Full(almost) Functional YouTube replica where one can login with his/her youtube account to enjoy "not-YouTube".User can like a video,comment on a video & Much More ',
-    key_techs: [
-      "React",
-      "Redux",
-      "Firebase Auth",
-      "YouTube API",
-      "Sass",
-      "Bootstrap",
+      "Mongodb",
     ],
   },
   {
-    name: "Football App",
-    image_path: "/images/football.png",
-    deployed_url: "https://o-my-goal.web.app/",
-    github_url: "https://github.com/Dey-Sumit/football-app",
-    category: ["react"],
+    name: "Hospital Management",
+    image_path: "/assets/hop.png",
+    deployed_url: null,
+    github_url: "Private",
+    category: ["node", "react", "Laravel"],
     description:
-      "o my goal replica where an user can keep an eye on his favorite club.This app will keep providing \n all the statistics of that club.all the fans can also chat ",
-    key_techs: ["React", "Redux", "Firebase Auth", "API", "Sass", "Bootstrap"],
+      "Realization of the HIS management application of the International University Hospital Mohammed.",
+    key_techs: ["React", "Laravel"],
   },
 ];

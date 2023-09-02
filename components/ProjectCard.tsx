@@ -40,7 +40,7 @@ const ProjectCard: FunctionComponent<{
       <p className="my-2 text-center">{name}</p>
 
       {showDetail && (
-        <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 md:grid-cols-2 gap-x-12 dark:text-white dark:bg-dark-100">
+        <div className="absolute top-0 left-0 z-10 grid w-full h-full p-2 text-black bg-gray-100 md:grid-cols-2 gap-x-12 dark:text-white dark:bg-dark-100">
           <div>
             {/* <img src={image_path} alt={name} /> */}
 
@@ -51,23 +51,28 @@ const ProjectCard: FunctionComponent<{
               height="150"
               width="300"
             />
+            
             <div className="flex justify-center my-4 space-x-3">
-              <a
+            
+ {github_url!=="Private" ?(  <a
                 href={github_url}
                 className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
               >
                 <AiFillGithub /> <span>Github</span>
-              </a>
-              <a
+              </a>):(
+                <p className="p-2 font-bold text-gray-500 bg-gray-300">Private repository</p>
+              )}
+            
+              {/* <a
                 href={deployed_url}
                 className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
               >
                 <AiFillProject /> <span>Project</span>
-              </a>
+              </a> */}
             </div>
           </div>
 
-          <div>
+          <div className="max-sm:-mt-56">
             <h2 className="mb-3 text-xl font-medium md:text-2xl">{name}</h2>
             <h3 className="mb-3 font-medium">{description}</h3>
 

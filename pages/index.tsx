@@ -15,14 +15,27 @@ const About: NextPage = () => {
   return (
     <div className="flex flex-col flex-grow px-6 pt-1 ">
       <h6 className="my-3 text-base font-medium">
-        I am currently pursuing B.Tech Degree(Final Year) in Computer Science
-        Engineering from Academy of Technology. I have 3+ years of experience in
-        Web Development and I have a Youtube Channel where I teach Full Stack
-        Web Development
+        Hello, I am a skilled web and mobile
+        developer with a strong educational
+        background, including a diploma in
+        computer technology and soon a master's
+        degree in computer engineering. With
+        several years of experience in web
+        development, I possess a deep
+        understanding of creating user-friendly
+        interfaces and robust backend systems. My
+        journey showcases my commitment to growth
+        and innovation, and I'm excited to
+        leverage my expertise to contribute to
+        cutting-edge projects and solutions in the
+        tech industry.
       </h6>
       <div
         className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100 "
-        style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}
+        style={{
+          marginLeft: "-1.5rem",
+          marginRight: "-1.5rem",
+        }}
       >
         <h4 className="my-3 text-xl font-semibold tracking-wide">
           What I am doing

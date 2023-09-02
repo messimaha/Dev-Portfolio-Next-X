@@ -1,5 +1,8 @@
 module.exports = {
-  purge: ["./pages/**/*.tsx", "./components/**/*.tsx"],
+  purge: [
+    "./pages/**/*.tsx",
+    "./components/**/*.tsx",
+  ],
   darkMode: "class",
   theme: {
     fontFamily: {
@@ -8,13 +11,14 @@ module.exports = {
     },
     boxShadow: {
       "custom-light": " 0 0 10px #313131",
-      "custom-dark": "5px 5px 10px #0a0c0e , -5px -5px 10px #14161c",
+      "custom-dark":
+        "5px 5px 10px #0a0c0e , -5px -5px 10px #14161c",
     },
 
     extend: {
       colors: {
         green: {
-          DEFAULT: "#00f260",
+          DEFAULT: "#ff96f2",
         },
         dark: {
           DEFAULT: "#010101",
