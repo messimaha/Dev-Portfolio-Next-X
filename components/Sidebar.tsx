@@ -37,7 +37,7 @@ const Sidebar = () => {
       </p>
       {/* Resume */}
       <a
-        href="/assets/CV de Maha Messi (2).pdf"
+        href="/assets/CV de MAHA MESSI.pdf"
         download="Messi Maha.pdf"
         className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500"
       >
