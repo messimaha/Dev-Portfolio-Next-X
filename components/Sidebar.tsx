@@ -23,7 +23,7 @@ const Sidebar = () => {
         src="/assets/mahaPic.png"
         alt="avatar"
         className="mx-auto border rounded-full "
-        height="128px"
+        height="138px"
         width="128px"
         layout="intrinsic"
         quality="100"
